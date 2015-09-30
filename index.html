@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+	<title>JavaScript Sortable</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<h1>Select your favourite animal</h1>
+<form method="post" name="theForm">
+	<div class="row">
+		<div id="msgBox">&nbsp;</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<select name="source" multiple="multiple" size="10" class="source form-control">
+				<option value="1">Cow</option>
+				<option value="2">Dog</option>
+				<option value="3">Sheep</option>
+				<option value="4">Cat</option>
+				<option value="5">Armadilo</option>
+				<option value="6">Chicken</option>
+				<option value="7">Iguana</option>
+				<option value="8">Rabbit</option>
+				<option value="9">Donkey</option>
+				<option value="10">Horse</option>
+			</select>
+		</div>
+		<div class="col-md-1">
+			<button name="add" class="form-control">>></button>
+			<br />
+			<button name="remove" class="form-control"><<</button>
+		</div>
+		<div class="col-md-3">
+			<select name="sink[]" multiple="multiple" size="10" class="sink form-control"></select>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-3">
+			<div class="row">
+				<div class="col-md-6">
+					<button name="up" class="form-control">Move up</button>
+				</div>
+				<div class="col-md-6">
+					<button name="down" class="form-control">Move down</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+<script src="sortable.js"></script>
+</body>
+</html>
