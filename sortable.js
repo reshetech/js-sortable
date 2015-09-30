@@ -93,7 +93,7 @@ function addOrRemove(addOrRemove) {
 	
 	// Return, if no item was selected.
 	if(typeof(selected) === "undefined") {
-		userMsg("לא בחרת פריט."); 
+		userMsg("You need to choose an item."); 
 		return;
 	}
 
@@ -147,7 +147,7 @@ function upOrDown(upOrDown) {
 	// Return, if no item was selected.
 	if(typeof(selected) === "undefined")
 	{
-		userMsg("לא בחרת פריט."); 
+		userMsg("You need to choose an item."); 
 		return;
 	}
 	
